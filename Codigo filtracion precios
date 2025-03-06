@@ -1,0 +1,11 @@
+celulares_samsung = [
+   {"celular": "Galaxy S24", "precio": 4999920},
+   {"celular": "Galaxy A35", "precio": 1399950},
+   {"celular": "Galaxy A55", "precio": 1999990},
+   ]
+def filtrar_precio(celulares_samsung):
+      return celulares_samsung["precio"] >= 2000000
+def nombre(celulares_samsung):
+      return celulares_samsung["celular"]
+celulares_filtrados = list(map(nombre, filter(filtrar_precio, celulares_samsung)))#encadenamiento/composicion de funciones map y filter y uso de funciones de orden superior (map y filter)
+print(celulares_filtrados)
