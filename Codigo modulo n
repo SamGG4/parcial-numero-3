@@ -1,0 +1,13 @@
+def restar(a, b):#Funcion pura e inmutabilidad en las variables
+    return a - b
+
+def modulo_n(a, b, n):#Funcion pura e inmutabilidad en las variables
+    return (a - b) / n
+
+def ejecutar():
+   a=5
+   b=2
+   n=3
+   modulo = modulo_n(a,b,n)
+   print(modulo)
+ejecutar()
